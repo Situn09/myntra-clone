@@ -1,4 +1,5 @@
 const CONVENIENCE_FEES = 49;
+
 let bagItemObjects;
 onLoad();
 

@@ -1,7 +1,7 @@
 let bagItems;
 onLoad();
 
-function onLoad(params) {
+function onLoad() {
     let bagItemsStr=localStorage.getItem('bagItems');
     bagItems=bagItemsStr ? JSON.parse(bagItemsStr):[];
     displayItemOnHomePage();
@@ -26,6 +26,9 @@ function displayBagIcon(){
 }
 function displayItemOnHomePage(){
     let itemsContainerElement = document.querySelector('.items-container');
+    if (!itemsContainerElement) {
+        return;
+    }
     let innerHtml='';
     items.forEach(item=>{
         innerHtml+=`
@@ -45,4 +48,4 @@ function displayItemOnHomePage(){
         </div>`
     });
     itemsContainerElement.innerHTML=innerHtml;
-};
+}
