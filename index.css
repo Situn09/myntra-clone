@@ -10,9 +10,9 @@ header{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #5e1818;
-    border-bottom-width: 100%;
-}
+    /* border-bottom: 1px solid #5e1818;
+    border-bottom-width: 100%;*/
+} 
 .myntra_logo{
     height: 25px;
     margin-left: 2%;
@@ -29,7 +29,11 @@ header{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 28px 0;
+    padding: 25px 0;
+    border-bottom:3px solid white;
+}
+.nav_bar a:hover{
+    border-bottom: 3px solid palevioletred;
 }
 .nav_bar a sup{
     color: #d3204a;
@@ -86,6 +90,9 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.banner_container{
+    padding: 20px 0 0 0;
 }
 .banner_image {
     width: 100%;
