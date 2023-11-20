@@ -7,9 +7,9 @@ function onLoad() {
   displayBagItems();
   displayBagSummary();
 }
-function thankUPages() {
+// function thankUPages() {
     
-}
+// }
 function displayBagSummary() {
   let bagSummaryElement = document.querySelector('.bag-summary');
   let totalItem = bagItemObjects.length;
